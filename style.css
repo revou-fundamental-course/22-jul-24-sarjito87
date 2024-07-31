@@ -1,0 +1,423 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #fefae0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #606c38;
+    padding: 20px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+.nav-links a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.nav-links a:hover {
+    color: #f4f4f4;
+}
+
+.header {
+    text-align: center;
+    margin: 20px;
+
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.header h1 {
+    font-size: 36px;
+    color: black;
+}
+
+.header h2 {
+    font-size: 28px;
+    color: black;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.left,
+.right {
+    width: 48%;
+    padding: 20px;
+    background-color: #dda15e;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-item {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    transition: opacity 0.5s, transform 0.5s;
+    transform: translateX(0);
+}
+
+.testimonial-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.testimonial-item.active {
+    display: block;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.testimonial-item.inactive {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+blockquote {
+    font-style: italic;
+    margin: 10px 0;
+}
+
+cite {
+    display: block;
+    color: white;
+    margin-top: 5px;
+}
+
+.testimonial-controls {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.testimonial-controls button {
+    padding: 10px;
+    margin: 5px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.testimonial-controls button:hover {
+    background-color: #555;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.benefit {
+    display: flex;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: padding 0.3s;
+}
+
+.benefit-satu img,
+.benefit-dua img,
+.benefit-tiga img {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.additional-info h3 {
+    padding: 20px;
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.additional-info p {
+    padding: 20px;
+    font-size: 1em;
+    color: white;
+}
+
+
+.benefit-text {
+    flex: 1;
+}
+
+.form-container {
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.right h2 {
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.right p {
+    justify-content: center;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid ;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus {
+    border-color: #606c38;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button[type="submit"] {
+    width: 100%;
+    height: 32px;
+    background-color: #606c38;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #606c38;
+    transform: scale(1.05);
+}
+
+.container-our-package {
+    width: auto;
+    margin: 0 auto; 
+    padding: 20px; 
+    background-color: #dda15e; 
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  h1 {
+    text-align: center; 
+    padding: 30px;
+  }
+  
+  .package-grid {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 20px; 
+  }
+  
+ 
+  .package-card {
+    padding: 20px; 
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    text-align: center; 
+  }
+  
+  .package-card {
+    padding: 20px;
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    text-align: center; 
+    background-color: #fff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; 
+  }
+
+  .package-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+    background-color: #f9f9f9; 
+  }
+  
+  .package-card .icon {
+    display: inline-block; 
+    margin-bottom: 10px; 
+  }
+  
+  .package-card .icon i {
+    font-size: 24px;
+    color: #007bff; 
+  }
+  
+  .package-card:hover .icon i {
+    color: #0056b3; 
+  }
+  
+  .package-card h3 {
+    margin-top: 0; 
+    font-size: 20px; 
+    color: #333; 
+    transition: color 0.3s; 
+  }
+  
+  .package-card:hover h3 {
+    color: #007bff;
+  }
+  
+  .package-card p {
+    color: #666; 
+    font-size: 16px; 
+  }
+  
+  .manfaat h2 {
+    padding-top: 20px;
+    line-height: 2;
+    text-align: center;
+  }
+  
+  .manfaat p {
+    color: #f4f4f4;
+    line-height: 1.6; 
+    text-align: center;
+  }
+  
+  .closing {
+    text-align: center; 
+    padding: 20px; 
+    border-top: 1px solid #283618; 
+    margin-top: 20px; 
+  }
+  
+  .closing p {
+    font-size: 18px; 
+    color: #f9f9f9; 
+    margin: 0 0 10px; 
+  }
+  
+  .call-us {
+    margin: 20px auto;
+    padding: 10px 20px; 
+    background-color: #606c38; 
+    color: #fff;
+    text-decoration: none; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 16px;
+    font-weight: bold; 
+    text-align: center; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.3s; 
+  }
+  
+  .call-us:hover {
+    background-color: #606c38;
+    transform: scale(1.05);
+  }
+  
+  .call-us:active {
+    transform: scale(0.95); 
+  }
+
+footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #606c38;
+    color: #fff;
+    cursor: pointer;
+}

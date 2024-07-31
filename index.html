@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Trusted Travel Agent</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="logo">
+            Jalanskyus
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#our-package">Our Package</a></li>
+            <li><a href="#call">Call Us</a></li>
+        </ul>
+    </div>
+    <div class="container">
+
+
+        <div class="header" id="home">
+            <h1>Your Trusted Travel Agent's</h1>
+            <h2>Your happiness is our happiness</h2>
+        </div>
+
+        <div class="content">
+            <div class="left">
+                <section class="testimonial">
+                    <div class="testimonial-carousel">
+                        <div class="testimonial-item active">
+                            <img src="https://api2.kemenparekraf.go.id/storage/app/uploads/public/620/b45/6e6/620b456e67fb4793798859.jpg"
+                                alt="Testimonial 1 Image">
+                            <blockquote>
+                                "Liburan jadi menyenangkan bersama Travel Agentku."
+                            </blockquote>
+                            <cite>Florence Hughes, Ibu Rumah Tangga, 28</cite>
+                        </div>
+                        <div class="testimonial-item">
+                            <img src="https://asset.kompas.com/crops/epoluhVtIT10GmnGQFE2PsdUJvE=/0x203:1080x923/750x500/data/photo/2020/11/11/5fabf6158ce8a.jpg"
+                                alt="Testimonial 2 Image">
+                            <blockquote>
+                                "Pelayanan sangat ramah dan paket wisata sangat lengkap!"
+                            </blockquote>
+                            <cite>John Doe, Pengusaha, 34</cite>
+                        </div>
+                        <div class="testimonial-item">
+                            <img src="https://images.tokopedia.net/img/JFrBQq/2022/6/30/b905d5da-f21d-4b36-891a-8b7010cca847.jpg"
+                                alt="Testimonial 2 Image">
+                            <blockquote>
+                                "Pelayanan sangat ramah dan paket wisata sangat lengkap!"
+                            </blockquote>
+                            <cite>Fania, Mahasiswa ITB, 19</cite>
+                        </div>
+                        <div class="testimonial-item">
+                            <img src="https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/indizone/2022/01/05/Z8sPQy5/4-tempat-wisata-di-tanah-batak-yang-wajib-dikunjungi-di-tahun-202283.jpg"
+                                alt="Testimonial 2 Image">
+                            <blockquote>
+                                "Pelayanan sangat ramah dan paket wisata sangat lengkap!"
+                            </blockquote>
+                            <cite>Akmal Huda, Mahasiswa UIN, 20</cite>
+                        </div>
+                    </div>
+                    <div class="testimonial-controls">
+                        <button class="prev">Previous</button>
+                        <button class="next">Next</button>
+                    </div>
+                </section>
+
+                <div class="benefits">
+                    <section class="additional-info">
+                        <h3>Use this space to provide users with more information about your offer.</h3>
+                        <p>Consider it a follow-up to your headline and explain the benefits of your service or product.
+                        </p>
+                        <div class="benefit">
+                            <div class="benefit-satu"><img src="pngwing.com (1).png" alt="satu"></div>
+                            <div class="benefit-text">Your first feature, written in the form of a benefit statement..
+                            </div>
+                        </div>
+                        <div class="benefit">
+                            <div class="benefit-dua"><img src="pngwing.com (2).png" alt="dua"></div>
+                            <div class="benefit-text">Your second feature, written in the form of a benefit statement.
+                            </div>
+                        </div>
+                        <div class="benefit">
+                            <div class="benefit-tiga"><img src="pngwing.com (3).png" alt="tiga"></div>
+                            <div class="benefit-text">Your third feature, written in the form of a benefit statement.
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <div class="right">
+                <h2>Contact Us</h2>
+                <p>Tim kami akan menghubungi Anda dalam waktu 1x24 jam setelah data Anda diterima.</p>
+                <div class="form-container">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Nama Anda:</label>
+                            <input type="text" id="name" name="name" placeholder="Nama Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Anda:</label>
+                            <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="interest">Apa yang anda minati?</label>
+                            <select id="interest" name="interest">
+                                <option value="">Pilih Opsi</option>
+                                <option value="Bali">Bali</option>
+                                <option value="Japan">Jambi</option>
+                                <option value="Singapura">Bogor</option>
+                                <option value="Bandung">Bandung</option>
+                                <option value="Bandung">Medan</option>
+                                <option value="Bandung">Padang</option>
+                            </select>
+                        </div>
+                        <button type="submit">SEND</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="our-package">
+            <h1>Our Package</h1>
+        </div>
+
+        <div class="container-our-package">
+            <div class="package-grid">
+                <div class="package-card" onclick="bali()">
+                    <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3>Bali</h3>
+                    <p>Travel dan wisata di Bali, kunjungi cagar budaya dan kuliner yang menarik</p>
+                </div>
+                <div class="package-card" onclick="jambi()">
+                    <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3>Jambi</h3>
+                    <p>Travel dan wisata di Jambi. kunjungi cagar budaya dan kuliner yang menarik</p>
+                </div>
+                <div class="package-card" onclick="bogor()">
+                    <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3>Bogor</h3>
+                    <p>Travel dan wisata di Bogor. kunjungi cagar budaya dan kuliner yang menarik</p>
+                </div>
+                <div class="package-card" onclick="bandung()">
+                    <div class="icon"><i class="fas fa-star"></i></div>
+                    <h3>Bandung</h3>
+                    <p>Travel dan wisata di Bandung. kunjungi cagar budaya dan kuliner yang menarik</p>
+                </div>
+                <div class="package-card" onclick="medan()">
+                    <div class="icon"><i class="fas fa-star"></i></div>
+                    <h3>Medan</h3>
+                    <p>Travel dan wisata di Medan. kunjungi cagar budaya dan kuliner yang menarik</p>
+                </div>
+                <div class="package-card" onclick="padang()">
+                    <div class="icon"><i class="fas fa-star"></i></div>
+                    <h3>Padang</h3>
+                    <p>Travel dan wisata di Padang kunjungi cagar budaya dan kuliner yang menarik</p>
+                </div>
+
+            </div>
+            <div>
+                <article class="manfaat">
+                    <h2>Manfaat Menggunakan Layanan Travel Agent Kami</h2>
+                    <p>"Mendukung Anda dalam memilih pilihan perjalanan yang tepat dan sesuai dengan kebutuhan Anda."
+                        <br>"Menyediakan kemudahan dan keamanan dengan pengaturan yang lengkap dan dukungan
+                        berkelanjutan."
+                        <br>"Menghindari waktu yang dihabiskan untuk mencari dan membandingkan berbagai pilihan
+                        perjalanan sendiri."
+                        <br>"Mengadopsi layanan Travel Agent kami secara gratis dan terhubung langsung ke kami melalui
+                        layanan chat dan email."
+                        <br>"Membantu dalam pengelolaan anggaran perjalanan dan memastikan Anda mendapatkan nilai
+                        terbaik untuk pengeluaran Anda."
+                        <br>"Mendapatkan itinerary yang sepenuhnya disesuaikan dengan preferensi pribadi Anda, dengan
+                        opsi untuk perubahan atau penyesuaian."
+                    </p>
+                </article>
+            </div>
+            <div class="closing">
+                <h2>Penutup</h2> <!-- Judul penutupan -->
+                <p>"Terima kasih telah mengunjungi kami! Temukan petualangan Anda berikutnya bersama kami dan buat
+                    kenangan yang tak terlupakan. Hubungi kami hari ini untuk merencanakan perjalanan impian Anda!"</p>
+                <!-- Deskripsi penutupan -->
+                <button class="call-us" id="call" onclick="call()">CALL US</button> <!-- Tombol untuk menghubungi -->
+            </div>
+        </div>
+
+    </div>
+        <footer>
+            <h3>Jalanskyus</h3>
+            <p><a href="https://policies.google.com/terms?hl=en-US" target="_blank">Terms of Service</a> | <a
+                    href="https://policies.google.com/privacy?hl=en-US" target="_blank">Privacy Policy</a></p>
+            <p>&copy; 2024</p>
+        </footer>
+
+        <script src="script/script.js"></script>
+</body>
+
+</html>
